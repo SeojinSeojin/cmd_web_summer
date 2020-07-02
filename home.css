@@ -2,11 +2,43 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
+h2 {
+    font-weight: 300;
+    font-size: 23px;
+    padding-bottom: 30px;
+}
+
+h2 strong {
+    font-weight: 900;
+    color: rgb(187, 27, 27);
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6em;
+}
+
+h3 strong {
+    font-weight: 550;
+}
+
 .wrapper {
     position: relative;
     margin: 0 auto;
-    height: 600px;
+    height: 500px;
     border-bottom: 1px solid rgb(200, 200, 200);
+    padding-right: 301px;
+}
+
+.wrapper:nth-child(1) {
+    height: 620px;
+}
+
+.wrapper:nth-child(2) {
+    background-color: white;
 }
 
 .home__image {
@@ -14,20 +46,21 @@ body {
     height: 500px;
     width: auto;
     bottom: 0;
-    left: 40px;
+    left: 10%;
     border-radius: 5% 5% 0% 0%;
     border: 1px solid rgb(200, 200, 200);
 }
 
 .home__greeting {
-    font-size: 25px;
     position: absolute;
-    top: 350px;
-    left: 350px;
+    top: 300px;
+    left: 37%;
 }
 
-.home__greeting strong {
-    color: rgb(187, 27, 27);
+.home__description {
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
 }
 
 .home__login {
@@ -66,9 +99,20 @@ body {
     color: white;
 }
 
+.home__login button {
+    position: absolute;
+    top: 343px;
+    left: 50%;
+    background-color: rgb(187, 27, 27);
+    color: white;
+    width: 240px;
+    height: 40px;
+    margin-left: -120px;
+}
+
 .home__login a {
     position: absolute;
-    top: 350px;
+    top: 400px;
     right: 30px;
     font-size: 15px;
     color: rgb(150, 150, 150);
