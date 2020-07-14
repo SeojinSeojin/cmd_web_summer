@@ -1,19 +1,22 @@
 header {
     margin: 0 auto;
-    padding-top: 1em;
+    padding-top: .4em;
     padding-bottom: 1em;
-    height: 4em;
+    height: 3.3em;
+    width: 100%;
     border-bottom: 1px solid rgb(200, 200, 200);
+    position: fixed;
 }
 
 header img {
+    margin: 0 auto;
     margin-left: 3em;
 }
 
 header div div {
     margin: 0 auto;
     float: left;
-    padding: .4em;
+    padding: .3em;
     width: 15%;
 }
 
@@ -29,10 +32,10 @@ header ul {
 
 header li {
     padding: 1em;
-    padding-bottom: 2.3em;
+    padding-bottom: 1.5em;
     margin-left: 1em;
     float: left;
-    transition: .3s;
+    transition: .1s;
 }
 
 header li:hover {

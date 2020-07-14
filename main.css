@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+* {
+    font-family: 'Noto Sans KR', monospace;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
 body {
     background-color: rgb(250, 250, 250);
     margin: 0 auto;
@@ -155,4 +162,60 @@ form input[type="submit"] {
 .signup__form input:focus {
     background-color: white;
     font-weight: 500;
+}
+
+.main__user__info {
+    margin-top: 7em;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    width: 180px;
+    height: 375px;
+    border: 1px solid rgb(150, 150, 150);
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.main__user__info img {
+    position: absolute;
+    top: 40px;
+    width: 60px;
+    height: auto;
+    padding: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.main__user__info div {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    width: 175px;
+}
+
+.main__user__info div button {
+    font-size: .8rem;
+    margin: .2em;
+}
+
+.main__user__info ul {
+    position: absolute;
+    top: 265px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+}
+
+.main__user__info ul li {
+    padding: .2em;
+}
+
+.main__user__info ul li:hover {
+    color: rgb(100, 100, 100);
+    box-shadow: grey 0px 1px 0px 0px;
 }
