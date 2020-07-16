@@ -36,6 +36,11 @@ h3 strong {
     font-weight: 550;
 }
 
+main {
+    background-color: rgb(245, 245, 245);
+    height: 720px;
+}
+
 .wrapper {
     position: relative;
     margin: 0 auto;
@@ -173,7 +178,7 @@ form input[type="submit"] {
     height: 375px;
     border: 1px solid rgb(150, 150, 150);
     text-align: center;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(247, 247, 247);
 }
 
 .main__user__info img {
@@ -222,30 +227,58 @@ form input[type="submit"] {
 
 .info__nav {
     position: absolute;
+    margin: 0;
     margin-top: 7em;
-    left: 40px;
+    left: 80px;
     width: 260px;
 }
 
 .info__nav div {
-    border: .1em solid rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
     margin-bottom: .2em;
+    padding: 0;
+    background-color: white;
 }
 
 .info__nav ul {
     list-style: none;
+    list-style-type: none;
     line-height: 2em;
+    background-color: white;
+    padding-left: 0;
+    margin: 0;
+}
+
+.info__nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    height: 2.6em;
+    margin: 0;
+    padding-left: 2em;
+    padding-top: .5em;
+}
+
+.info__nav ul li:nth-child(1) {
+    background-color: rgb(245, 245, 245);
+    color: rgb(187, 27, 27);
+}
+
+.info__nav ul li:hover {
+    background-color: rgb(245, 245, 245);
+    color: rgb(187, 27, 27);
 }
 
 .info__second {
     position: absolute;
     margin-top: 7em;
-    left: 340px;
-    right: 40px;
+    left: 380px;
+    right: 80px;
+    background-color: white;
 }
 
 .information div {
-    border: .1em solid rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
 }
 
 .information div:nth-child(2) {
@@ -255,18 +288,45 @@ form input[type="submit"] {
 
 .information div span {
     display: block;
-    align-self: center;
     margin: 0 auto;
-    padding: .5em;
+    padding: 1em;
 }
 
 .information div span:nth-child(2n-1) {
     font-size: small;
     width: 80px;
-    justify-self: self-end;
+    text-align: right;
 }
 
 .information div span:nth-child(2n) {
     justify-self: start;
     width: 5fr;
+}
+
+.info__change {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.info__change h2 {
+    padding: .5em;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.info__change form {
+    padding: .5em;
+    padding-left: 2em;
+}
+
+.info__change form input {
+    display: inline-block;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.info__change form div {
+    margin: 0 auto;
+    padding-bottom: 1em;
 }
