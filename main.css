@@ -219,3 +219,54 @@ form input[type="submit"] {
     color: rgb(100, 100, 100);
     box-shadow: grey 0px 1px 0px 0px;
 }
+
+.info__nav {
+    position: absolute;
+    margin-top: 7em;
+    left: 40px;
+    width: 260px;
+}
+
+.info__nav div {
+    border: .1em solid rgb(200, 200, 200);
+    margin-bottom: .2em;
+}
+
+.info__nav ul {
+    list-style: none;
+    line-height: 2em;
+}
+
+.info__second {
+    position: absolute;
+    margin-top: 7em;
+    left: 340px;
+    right: 40px;
+}
+
+.information div {
+    border: .1em solid rgb(200, 200, 200);
+}
+
+.information div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+.information div span {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+.information div span:nth-child(2n-1) {
+    font-size: small;
+    width: 80px;
+    justify-self: self-end;
+}
+
+.information div span:nth-child(2n) {
+    justify-self: start;
+    width: 5fr;
+}
