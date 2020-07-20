@@ -333,4 +333,40 @@ form input[type="submit"] {
 
 .post__form form {
     padding-top: 7em;
+    padding-left: 7em;
+}
+
+.post__form input[type="text"] {
+    padding: .5em;
+    width: 480px;
+    color: #718096;
+    border: 2px solid rgb(200, 200, 200);
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.post__form textarea {
+    padding: .5em;
+    width: 480px;
+    height: 30em;
+    color: #718096;
+    border: 2px solid rgb(200, 200, 200);
+    border-top: .5px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    resize: none;
+}
+
+.post__form form div {
+    padding: 3px;
+    width: 471px;
+    background-color: white;
+    margin-left: 0;
+    border: 2px solid rgb(200, 200, 200);
+    border-top: none;
+}
+
+.post__form button {
+    border: none;
+    background: none;
+    color: rgb(170, 170, 170);
 }
