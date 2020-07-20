@@ -1,0 +1,40 @@
+<html>
+<meta charset="utf-8">
+<title>에부리타임</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<body>
+
+    <header>
+        <div>
+            <img src="et_logo.jpg" style="width:60px; height:auto; float:left;" onclick="location.href='main.html'">         
+            <div>
+                <p style="font-size:0.9em; color:rgb(187, 27, 27);">에브리타임</p>
+                <p style="font-size:1.2em;">성균관대<p>
+            </div>
+        </div>
+        <ul>
+            <li>게시판</li>
+            <li>시간표</li>
+            <li>강의평가</li>
+            <li>학점계산기</li>
+            <li>친구</li>
+            <li onclick="location.href='https://bookstore.everytime.kr/'">책방</li>
+            <li onclick="location.href='https://www.campuspick.com/'">캠퍼스픽</li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="post__form">
+            <form>
+                <input placeholder="글 제목" autofocus><br>
+                <textarea>여기를 눌러서 글을 작성할 수 있습니다.</textarea><br>
+                <button><i class="fas fa-hashtag"></i></button>
+                <button><i class="fas fa-paperclip"></i></button>
+                <input type="submit" value="글쓰기">
+            </form>
+        </div>
+    </main>
+
+</body>
