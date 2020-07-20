@@ -7,6 +7,7 @@ header {
     border-bottom: 1px solid rgb(200, 200, 200);
     position: fixed;
     background-color: white;
+    min-width: 970px;
 }
 
 header img {
@@ -43,4 +44,5 @@ header li:hover {
     color: rgb(187, 27, 27);
     font-weight: 700;
     border-bottom: .4em solid rgb(187, 27, 27);
+    cursor: pointer;
 }

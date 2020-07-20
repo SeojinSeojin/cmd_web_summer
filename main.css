@@ -41,6 +41,14 @@ main {
     height: 720px;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .wrapper {
     position: relative;
     margin: 0 auto;
@@ -161,7 +169,8 @@ form input[type="submit"] {
     height: 1.7em;
     width: 400px;
     border-radius: 5px;
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: #F7FAFC;
+    border: 1px solid #718096;
 }
 
 .signup__form input:focus {
@@ -175,10 +184,10 @@ form input[type="submit"] {
     left: 40px;
     top: 0;
     width: 180px;
-    height: 375px;
+    height: 400px;
     border: 1px solid rgb(150, 150, 150);
     text-align: center;
-    background-color: rgb(247, 247, 247);
+    background-color: #ecedee;
 }
 
 .main__user__info img {
@@ -197,7 +206,7 @@ form input[type="submit"] {
     top: 120px;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border-bottom: 1px solid rgb(150, 150, 150);
     width: 175px;
 }
@@ -205,11 +214,18 @@ form input[type="submit"] {
 .main__user__info div button {
     font-size: .8rem;
     margin: .2em;
+    margin-top: 2em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    width: 5.5em;
+    background-color: #eeeeee;
+    border: 1px solid #afb5bd;
+    border-radius: 2px;
 }
 
 .main__user__info ul {
     position: absolute;
-    top: 265px;
+    top: 290px;
     left: 50%;
     transform: translateX(-50%);
     list-style: none;
@@ -223,6 +239,7 @@ form input[type="submit"] {
 .main__user__info ul li:hover {
     color: rgb(100, 100, 100);
     box-shadow: grey 0px 1px 0px 0px;
+    cursor: pointer;
 }
 
 .info__nav {
@@ -283,12 +300,11 @@ form input[type="submit"] {
 
 .information div:nth-child(2) {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-template-columns: 100px 350px;
 }
 
 .information div span {
     display: block;
-    margin: 0 auto;
     padding: 1em;
 }
 
@@ -299,12 +315,12 @@ form input[type="submit"] {
 }
 
 .information div span:nth-child(2n) {
-    justify-self: start;
-    width: 5fr;
+    width: 350px;
 }
 
 .info__change {
     border: 1px solid rgb(200, 200, 200);
+    display: inline;
 }
 
 .info__change h2 {
@@ -318,7 +334,6 @@ form input[type="submit"] {
 }
 
 .info__change form input {
-    display: inline-block;
     border: none;
     border-right: 0px;
     border-top: 0px;
@@ -327,7 +342,7 @@ form input[type="submit"] {
 }
 
 .info__change form div {
-    margin: 0 auto;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
