@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 * {
-    font-family: 'Noto Sans KR', monospace;
+    font-family: "Noto Sans KR", monospace;
     font-size: 16px;
     margin: 0 auto;
 }
@@ -98,7 +98,7 @@ button:hover {
 .home__login {
     background-color: white;
     position: fixed;
-    border-left: .5px solid rgb(200, 200, 200);
+    border-left: 0.5px solid rgb(200, 200, 200);
     height: 100%;
     width: 300px;
     right: 0;
@@ -169,7 +169,7 @@ form input[type="submit"] {
     height: 1.7em;
     width: 400px;
     border-radius: 5px;
-    background-color: #F7FAFC;
+    background-color: #f7fafc;
     border: 1px solid #718096;
 }
 
@@ -212,11 +212,11 @@ form input[type="submit"] {
 }
 
 .main__user__info div button {
-    font-size: .8rem;
-    margin: .2em;
+    font-size: 0.8rem;
+    margin: 0.2em;
     margin-top: 2em;
-    padding-top: .4em;
-    padding-bottom: .4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
     width: 5.5em;
     background-color: #eeeeee;
     border: 1px solid #afb5bd;
@@ -233,13 +233,19 @@ form input[type="submit"] {
 }
 
 .main__user__info ul li {
-    padding: .2em;
+    padding: 0.2em;
 }
 
 .main__user__info ul li:hover {
     color: rgb(100, 100, 100);
     box-shadow: grey 0px 1px 0px 0px;
     cursor: pointer;
+}
+
+.main__board__list {
+    position: absolute;
+    margin-top: 7em;
+    left: 350px;
 }
 
 .info__nav {
@@ -252,7 +258,7 @@ form input[type="submit"] {
 
 .info__nav div {
     border: 1px solid rgb(200, 200, 200);
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
     padding: 0;
     background-color: white;
 }
@@ -273,7 +279,7 @@ form input[type="submit"] {
     height: 2.6em;
     margin: 0;
     padding-left: 2em;
-    padding-top: .5em;
+    padding-top: 0.5em;
 }
 
 .info__nav ul li:nth-child(1) {
@@ -324,12 +330,12 @@ form input[type="submit"] {
 }
 
 .info__change h2 {
-    padding: .5em;
+    padding: 0.5em;
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 .info__change form {
-    padding: .5em;
+    padding: 0.5em;
     padding-left: 2em;
 }
 
@@ -352,7 +358,7 @@ form input[type="submit"] {
 }
 
 .post__form input[type="text"] {
-    padding: .5em;
+    padding: 0.5em;
     width: 480px;
     color: #718096;
     border: 2px solid rgb(200, 200, 200);
@@ -361,12 +367,12 @@ form input[type="submit"] {
 }
 
 .post__form textarea {
-    padding: .5em;
+    padding: 0.5em;
     width: 480px;
     height: 30em;
     color: #718096;
     border: 2px solid rgb(200, 200, 200);
-    border-top: .5px solid rgb(200, 200, 200);
+    border-top: 0.5px solid rgb(200, 200, 200);
     border-bottom: 1px solid rgb(200, 200, 200);
     resize: none;
 }
