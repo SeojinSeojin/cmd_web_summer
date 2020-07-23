@@ -1,6 +1,6 @@
 header {
     margin: 0 auto;
-    padding-top: .4em;
+    padding-top: 0.4em;
     padding-bottom: 1em;
     height: 3.3em;
     width: 100%;
@@ -8,6 +8,7 @@ header {
     position: fixed;
     background-color: white;
     min-width: 970px;
+    z-index: 2;
 }
 
 header img {
@@ -18,7 +19,7 @@ header img {
 header div div {
     margin: 0 auto;
     float: left;
-    padding: .3em;
+    padding: 0.3em;
     width: 15%;
 }
 
@@ -37,12 +38,12 @@ header li {
     padding-bottom: 1.5em;
     margin-left: 1em;
     float: left;
-    transition: .1s;
+    transition: 0.1s;
 }
 
 header li:hover {
     color: rgb(187, 27, 27);
     font-weight: 700;
-    border-bottom: .4em solid rgb(187, 27, 27);
+    border-bottom: 0.4em solid rgb(187, 27, 27);
     cursor: pointer;
 }
