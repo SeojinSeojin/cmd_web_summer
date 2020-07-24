@@ -47,3 +47,23 @@ header li:hover {
     border-bottom: 0.4em solid rgb(187, 27, 27);
     cursor: pointer;
 }
+
+.board__list__div {
+    display: inline-block;
+    position: fixed;
+    top: 4.8em;
+    left: 3em;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgb(194, 194, 194);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.board__list__div span {
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+
+.board__list__div span:hover {
+    cursor: pointer;
+    color: rgb(187, 27, 27);
+}

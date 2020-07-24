@@ -245,7 +245,7 @@ form input[type="submit"] {
 .main__board__list {
     position: absolute;
     margin-top: 7em;
-    left: 350px;
+    left: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -253,11 +253,10 @@ form input[type="submit"] {
 .main__board {
     width: 250px;
     height: 200px;
-    margin: 1em;
-    margin-top: 0;
+    margin: 0.2em;
     border: 1px solid #afb5bd;
     border-radius: 2px;
-    background-color: white;
+    background-color: rgb(250, 249, 249);
 }
 
 .main__board h1 {
@@ -268,8 +267,17 @@ form input[type="submit"] {
     border-bottom: 1px solid #afb5bd;
 }
 
+.main__board h1:hover {
+    cursor: pointer;
+}
+
 .main__board div {
-    margin: 0.5em;
+    margin: 0;
+    padding: 0.32em;
+}
+
+.main__board div:hover {
+    background-color: #ecedee;
 }
 
 .main__board__time {
