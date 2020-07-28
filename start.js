@@ -1,9 +1,11 @@
 const express = require("express");
 
 const app = express();
+const db = require("./db.js");
 
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
+db();
 app.engine("html", require("ejs").renderFile);
 app.use(express.static(__dirname + "/public"));
 
