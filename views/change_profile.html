@@ -1,13 +1,13 @@
 <html>
 <meta charset="utf-8">
 <title>에부리타임</title>
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="/stylesheets/main.css">
+<link rel="stylesheet" href="/stylesheets/header.css">
 
 <body>
     <header>
         <div>
-            <img src="et_logo.jpg" style="width:60px; height:auto; float:left;" onclick="location.href='main.html'">         
+            <img src="/images/et_logo.jpg" style="width:60px; height:auto; float:left;" onclick="location.href='/main/'">         
             <div>
                 <p style="font-size:0.9em; color:rgb(187, 27, 27);">에브리타임</p>
                 <p style="font-size:1.2em;">성균관대<p>
@@ -29,9 +29,9 @@
             <div style="height:2.5em;padding:.8em;"><h2>내 정보</h2></div>
             <div>
                 <ul>
-                    <li><a href='user_profile.html'>기본 정보</a></li>
+                    <li><a href='/user/profile/'>기본 정보</a></li>
                     <li><a href='#'>학교 인증</a></li>
-                    <li><a href='change_profile.html'>개인정보 변경</a></li>
+                    <li><a href='/user/profile/change/'>개인정보 변경</a></li>
                     <li><a href='#'>비밀번호 변경</a></li>
                     <li><a href='#'>프로필 이미지 변경</a></li>
                     <li><a href='#'>게시판 관리</a></li>
@@ -72,6 +72,7 @@
             </form>
         </div>
     </main>
+    <script src="/scripts/get_board_list.js"></script>
 
 </body>
 
