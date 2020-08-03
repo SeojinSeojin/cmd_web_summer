@@ -15,5 +15,5 @@ module.exports = () => {
     }
     connect();
     mongoose.connection.on("disconnected", connect);
-    require("./user.js");
+    require("./user");
 };
