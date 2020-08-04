@@ -8,6 +8,6 @@ const UserSchema = new mongoose.Schema({
     name: String,
     email: { type: String, required: true, unique: true, lowercase: true },
 });
-UserSchema.plugin(passportLocalMongoose, { usernameField: "name" });
+UserSchema.plugin(passportLocalMongoose, { usernameField: "email" });
 const UserModel = mongoose.model("User", UserSchema);
 export default UserModel;
