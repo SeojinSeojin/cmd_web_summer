@@ -6,6 +6,7 @@ import session from "express-session";
 import MongoStore from "connect-mongo";
 import cookieParser from "cookie-parser";
 import user_router from "./routers/user_router";
+import home_router from "./routers/home_router";
 import { localMiddleware } from "./middleware";
 import "./passport";
 
@@ -26,7 +27,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 db();
 app.engine("html", require("ejs").renderFile);
-
 app.use(
     session({
         secret: "tjwls@#@",
@@ -41,8 +41,7 @@ app.use(passport.session());
 
 app.use(localMiddleware);
 
-app.get("/", (req, res) => res.render("index.html"));
-app.get("/main/", (req, res) => res.render("main.html"));
+app.use("/", home_router);
 app.use("/user", user_router);
 
 export default app;

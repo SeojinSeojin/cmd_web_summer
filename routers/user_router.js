@@ -1,5 +1,5 @@
 import express from "express";
-import { postAddUser, postLogin } from "../controllers/user_controller";
+import { postAddUser, postLogin, logout } from "../controllers/user_controller";
 
 const user_router = express.Router();
 
@@ -12,5 +12,7 @@ user_router.get("/signup/", (req, res) => res.render("signup.html"));
 user_router.post("/signup/addUser", postAddUser, postLogin);
 
 user_router.post("/login", postLogin);
+
+user_router.get("/logout", logout);
 
 module.exports = user_router;

@@ -23,7 +23,6 @@ export const postAddUser = async(req, res, next) => {
             });
             await UserModel.register(user, password);
             next();
-            res.redirect("/main");
         } catch (error) {
             console.log(error);
             res.redirect("/");
