@@ -34,11 +34,11 @@
     </div>
 
     <div class="home__login">
-        <img class="home__logo" src="/images/et_logo.jpg" onclick="location.href='home.html'">
-        <form>
-            <input placeholder=" ID" autofocus>
+        <img class="home__logo" src="/images/et_logo.jpg" onclick="location.href='/main'">
+        <form method="post" action="/user/login">
+            <input name="email" placeholder=" Email" autofocus>
             <br>
-            <input placeholder=" PW" type="password">
+            <input name="password" placeholder=" PW" type="password">
             <br>
             <input value="로그인" type="submit">
         </form>

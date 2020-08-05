@@ -1,6 +1,7 @@
 import UserModel from "../user";
+import passport from "passport";
 
-export const postAddUser = async(req, res) => {
+export const postAddUser = async(req, res, next) => {
     const school = req.sanitize(req.body.school);
     const undergrad_in = req.sanitize(req.body.undergrad_in);
     const major = req.sanitize(req.body.major);
@@ -21,10 +22,21 @@ export const postAddUser = async(req, res) => {
                 email,
             });
             await UserModel.register(user, password);
+            next();
             res.redirect("/main");
         } catch (error) {
             console.log(error);
             res.redirect("/");
         }
     }
+};
+
+export const postLogin = passport.authenticate("local", {
+    failureRedirect: "/login",
+    successRedirect: "/main",
+});
+
+export const logout = (req, res) => {
+    req.logout();
+    res.redirect("/");
 };
