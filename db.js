@@ -15,5 +15,6 @@ module.exports = () => {
     }
     connect();
     mongoose.connection.on("disconnected", connect);
-    require("./user");
+    require("./db/user");
+    require("./db/posting");
 };

@@ -1,4 +1,4 @@
-import UserModel from "../user";
+import UserModel from "../db/user";
 import passport from "passport";
 
 export const postAddUser = async(req, res, next) => {
@@ -38,4 +38,18 @@ export const postLogin = passport.authenticate("local", {
 export const logout = (req, res) => {
     req.logout();
     res.redirect("/");
+};
+
+export const isAuthenticated = (req, res, next) => {
+    if (req.user) {
+        return next();
+    }
+    res.redirect("/");
+};
+
+export const isNotAuthenticated = (req, res, next) => {
+    if (req.user) {
+        res.redirect("/");
+    }
+    next();
 };

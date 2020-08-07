@@ -16,6 +16,7 @@ const CookieStore = MongoStore(session);
 const db = require("./db.js");
 const bodyParser = require("body-parser");
 const express_sanitizer = require("express-sanitizer");
+const flash = require("connect-flash");
 
 app.use(helmet());
 app.set("view engine", "ejs");
@@ -25,6 +26,7 @@ app.use(express_sanitizer());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(flash());
 db();
 app.engine("html", require("ejs").renderFile);
 app.use(
