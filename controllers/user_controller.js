@@ -31,7 +31,7 @@ export const postAddUser = async(req, res, next) => {
 };
 
 export const postLogin = passport.authenticate("local", {
-    failureRedirect: "/login",
+    failureRedirect: "/",
     successRedirect: "/main",
 });
 
