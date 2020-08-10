@@ -428,3 +428,23 @@ form input[type="submit"] {
     background: none;
     color: rgb(170, 170, 170);
 }
+
+.posting__detail {
+    border: 2px solid rgb(200, 200, 200);
+    margin: 0 20% 0 20%;
+    padding: 1em;
+    margin-bottom: 0.1em;
+    background-color: white;
+}
+
+.posting__board {
+    font-size: 1.3em;
+}
+
+.posting__content p:nth-child(n+3) {
+    padding-bottom: 1em;
+}
+
+.posting__comment input {
+    border: none;
+}

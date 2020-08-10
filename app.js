@@ -7,6 +7,7 @@ import MongoStore from "connect-mongo";
 import cookieParser from "cookie-parser";
 import user_router from "./routers/user_router";
 import home_router from "./routers/home_router";
+import posting_router from "./routers/posting_router";
 import { localMiddleware } from "./middleware";
 import "./passport";
 
@@ -45,5 +46,6 @@ app.use(localMiddleware);
 
 app.use("/", home_router);
 app.use("/user", user_router);
+app.use("/posting", posting_router);
 
 export default app;

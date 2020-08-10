@@ -26,20 +26,23 @@
     </header>
 
     <main>
-        <div class="post__form">
-            <form method="post" action="/posting/create/">
-                <input name="title" type="text" placeholder="글 제목" autofocus><br>
-                <textarea name="content" placeholder="여기를 눌러서 글을 작성할 수 있습니다. 
-1. 홍보 게시물 작성 금지
-2. 정당, 정치인, 선거 후보자 및 관련자에 대한 비방, 비하, 모욕
-3. 커뮤니티 이용규칙에 어긋나는 행위 금지"></textarea>
-                <div>
-                    <button><i class="fas fa-hashtag"></i></button>
-                    <button><i class="fas fa-paperclip"></i></button>
-                    <input name="ifAnonymous" type="checkbox" value="익명"> 익명
-                    <input type="submit" value="글쓰기">
-                </div>
-            </form>
+        <div style="height:7em;"></div>
+        <div>
+            <div class="posting__detail posting__board">
+                인사캠 자유게시판
+            </div>
+            <div class="posting__detail posting__content">
+                <img src="/images/profile.jpg" style="height:2.4em; width:auto; float:left; margin-right: 10px; border-radius:.2em;">
+                <p id="p__user">익명</p>
+                <p id="p__title" style="font-size:0.8em; color:rgb(170, 170, 170);">13분 전</p>
+                <p id="p__content" style="font-size:1.3em;">제주도 갈거면</p>
+                <p>2박 3일보다는 3박 4일이 낫지 않아? 2박으로도 충분해?</p>
+            </div>
+            <div class="posting__detail posting__comment">
+                <form>
+                    <input name="comment" placeholder="댓글을 입력하세요.">
+                </form>
+            </div>
         </div>
     </main>
     <script src="/scripts/get_board_list.js"></script>
