@@ -1,16 +1,17 @@
 <html>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <title>에부리타임</title>
-<link rel="stylesheet" href="/stylesheets/main.css">
-<link rel="stylesheet" href="/stylesheets/header.css">
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<link rel="stylesheet" href="/stylesheets/header.css" />
 
 <body>
     <header>
         <div>
-            <img src="/images/et_logo.jpg" style="width:60px; height:auto; float:left;" onclick="location.href='/main/'">        
+            <img src="/images/et_logo.jpg" style="width: 60px; height: auto; float: left;" onclick="location.href='/main/'" />
             <div>
-                <p style="font-size:0.9em; color:rgb(187, 27, 27);">에브리타임</p>
-                <p style="font-size:1.2em;">성균관대<p>
+                <p style="font-size: 0.9em; color: rgb(187, 27, 27);">에브리타임</p>
+                <p style="font-size: 1.2em;">성균관대</p>
+                <p></p>
             </div>
         </div>
         <ul>
@@ -25,11 +26,17 @@
     </header>
     <main>
         <div class="main__user__info">
-            <img src="/images/profile.jpg">
+            <img src="/images/profile.jpg" />
             <div>
-                <p>컴교서진</p>
-                <p style="font-size:.8em; color:grey">김서진</p>
-                <p style="font-size:.8em; color:grey">001106ksj</p>
+                <p>
+                    <%=req.user.name%>
+                </p>
+                <p style="font-size: 0.8em; color: grey;">
+                    <%=req.user.undergrad_in%>학번
+                </p>
+                <p style="font-size: 0.8em; color: grey;">
+                    <%=req.user.email%>
+                </p>
                 <button onclick="location.href='/user/profile/'">내 정보</button>
                 <button onclick="location.href='/user/logout'">로그아웃</button>
             </div>
@@ -65,7 +72,7 @@
             </div>
             <div class="main__board">
                 <h1>자과캠 자유게시판</h1>
-                                <div>
+                <div>
                     <span class="main__board__title">금융권 희망하시는 분들</span>
                     <span class="main__board__time">방금</span>
                 </div>
@@ -88,7 +95,7 @@
             </div>
             <div class="main__board">
                 <h1>브로리에게 물어봐</h1>
-                                <div>
+                <div>
                     <span class="main__board__title">금융권 희망하시는 분들</span>
                     <span class="main__board__time">방금</span>
                 </div>
@@ -111,7 +118,7 @@
             </div>
             <div class="main__board">
                 <h1>정보게시판</h1>
-                                <div>
+                <div>
                     <span class="main__board__title">금융권 희망하시는 분들</span>
                     <span class="main__board__time">방금</span>
                 </div>
@@ -134,7 +141,7 @@
             </div>
             <div class="main__board">
                 <h1>취업/진로</h1>
-                                <div>
+                <div>
                     <span class="main__board__title">금융권 희망하시는 분들</span>
                     <span class="main__board__time">방금</span>
                 </div>
@@ -157,7 +164,7 @@
             </div>
             <div class="main__board">
                 <h1>동아리/학회</h1>
-                                <div>
+                <div>
                     <span class="main__board__title">금융권 희망하시는 분들</span>
                     <span class="main__board__time">방금</span>
                 </div>
@@ -182,6 +189,5 @@
     </main>
     <script src="/scripts/get_board_list.js"></script>
 </body>
-
 
 </html>

@@ -1,0 +1,68 @@
+<html>
+<meta charset="utf-8" />
+<title>에부리타임</title>
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<link rel="stylesheet" href="/stylesheets/header.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+<body>
+    <header>
+        <div>
+            <img src="/images/et_logo.jpg" style="width: 60px; height: auto; float: left;" onclick="location.href='/main/'" />
+            <div>
+                <p style="font-size: 0.9em; color: rgb(187, 27, 27);">에브리타임</p>
+                <p style="font-size: 1.2em;">성균관대</p>
+                <p></p>
+            </div>
+        </div>
+        <ul>
+            <li>게시판</li>
+            <li>시간표</li>
+            <li>강의평가</li>
+            <li>학점계산기</li>
+            <li>친구</li>
+            <li onclick="location.href='https://bookstore.everytime.kr/'">책방</li>
+            <li onclick="location.href='https://www.campuspick.com/'">캠퍼스픽</li>
+        </ul>
+    </header>
+
+    <main>
+        <div style="height: 7em;"></div>
+        <div>
+            <div class="posting__detail posting__board">
+                인사캠 자유게시판
+            </div>
+            <div class="posting__detail posting__content">
+                <img src="/images/profile.jpg" style="
+              height: 2.4em;
+              width: auto;
+              float: left;
+              margin-right: 10px;
+              border-radius: 0.2em;
+            " />
+                <%if(post.ifAnonymous){%>
+                    <p>익명</p>
+                    <%}else{%>
+                        <p>
+                            <%=creator%>
+                        </p>
+                        <%}%>
+                            <p style="font-size: 0.8em; color: rgb(170, 170, 170);">13분 전</p>
+                            <p style="font-size: 1.3em;">
+                                <%= post.title%>
+                            </p>
+                            <p>
+                                <%= post.content %>
+                            </p>
+            </div>
+            <div class="posting__detail posting__comment">
+                <form>
+                    <input name="comment" placeholder="댓글을 입력하세요." />
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/get_board_list.js"></script>
+</body>
+
+</html>

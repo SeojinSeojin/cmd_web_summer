@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(flash());
 db();
-app.engine("html", require("ejs").renderFile);
+//app.engine("html", require("ejs").renderFile);
 app.use(
     session({
         secret: "tjwls@#@",

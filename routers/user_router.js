@@ -10,14 +10,14 @@ import {
 const user_router = express.Router();
 
 user_router.get("/profile/change/", isAuthenticated, (req, res) =>
-    res.render("change_profile.html")
+    res.render("change_profile.ejs")
 );
 user_router.get("/profile/", isAuthenticated, (req, res) =>
-    res.render("user_profile.html")
+    res.render("user_profile.ejs")
 );
 
 user_router.get("/signup/", isNotAuthenticated, (req, res) =>
-    res.render("signup.html")
+    res.render("signup.ejs")
 );
 user_router.post("/signup/addUser", isNotAuthenticated, postAddUser, postLogin);
 

@@ -11,7 +11,7 @@ export const postAddUser = async(req, res, next) => {
     const password2 = req.sanitize(req.body.password2);
 
     if (password !== password2) {
-        res.render("signup.html");
+        res.render("signup.ejs");
     } else {
         try {
             const user = await UserModel({

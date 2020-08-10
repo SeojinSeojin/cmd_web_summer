@@ -18,7 +18,7 @@ const show_board = () => {
         board_list_div.className = "board__list__div";
         board_list.forEach((element) => {
             let board_span = document.createElement("span");
-            board_span.innerHTML = element;
+            board_span.innerejs = element;
             board_list_div.appendChild(board_span);
         });
         board_flag = 1;
