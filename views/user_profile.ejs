@@ -1,65 +1,37 @@
 <html>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <title>에부리타임</title>
-<link rel="stylesheet" href="/stylesheets/main.css">
-<link rel="stylesheet" href="/stylesheets/header.css">
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<link rel="stylesheet" href="/stylesheets/header.css" />
 
 <body>
     <header>
-        <div>
-            <img src="/images/et_logo.jpg" style="width:60px; height:auto; float:left;" onclick="location.href='/main/'">         
-            <div>
-                <p style="font-size:0.9em; color:rgb(187, 27, 27);">에브리타임</p>
-                <p style="font-size:1.2em;">성균관대<p>
-            </div>
-        </div>
-        <ul>
-            <li>게시판</li>
-            <li>시간표</li>
-            <li>강의평가</li>
-            <li>학점계산기</li>
-            <li>친구</li>
-            <li onclick="location.href='https://bookstore.everytime.kr/'">책방</li>
-            <li onclick="location.href='https://www.campuspick.com/'">캠퍼스픽</li>
-        </ul>
+        <%- include ("./partials/header") %>
     </header>
 
     <main>
-        <div class="info__nav">
-            <div style="height:2.5em;padding:.8em;"><h2>내 정보</h2></div>
-            <div>
-                <ul>
-                    <li><a href='/user/profile/'>기본 정보</a></li>
-                    <li><a href='#'>학교 인증</a></li>
-                    <li><a href='/user/profile/change'>개인정보 변경</a></li>
-                    <li><a href='#'>비밀번호 변경</a></li>
-                    <li><a href='#'>프로필 이미지 변경</a></li>
-                    <li><a href='#'>게시판 관리</a></li>
-                    <li><a href='#'>접근 제한</a></li>
-                    <li><a href='#'>회원 탈퇴</a></li>
-                </ul>
+        <%- include ("./partials/user_info_nav") %>
+            <div class="information info__second">
+                <div style="padding: 0.8em;">
+                    <h2>기본 정보</h2>
+                </div>
+                <div>
+                    <span>사진</span>
+                    <img src="/images/profile.jpg" style="width: 4em; height: auto; padding: 0.3em; margin-left: 1em;" />
+                    <span>아이디</span>
+                    <span>1106ksj</span>
+                    <span>이름</span>
+                    <span>김서진</span>
+                    <span>닉네임</span>
+                    <span>컴교서진</span>
+                    <span>이메일</span>
+                    <span>1106laura@naver.com</span>
+                    <span>학교</span>
+                    <span>성균관대학교</span>
+                </div>
             </div>
-        </div>
-        <div class="information info__second">
-            <div style="padding:.8em;"><h2>기본 정보</h2></div>
-            <div>
-                <span>사진</span>
-                <img src="/images/profile.jpg" style="width:4em; height:auto; padding:.3em; margin-left:1em;">
-                <span>아이디</span>
-                <span>1106ksj</span>
-                <span>이름</span>
-                <span>김서진</span>
-                <span>닉네임</span>
-                <span>컴교서진</span>
-                <span>이메일</span>
-                <span>1106laura@naver.com</span>
-                <span>학교</span>
-                <span>성균관대학교</span>
-            </div>
-        </div>
     </main>
     <script src="/scripts/get_board_list.js"></script>
-
 </body>
 
 </html>

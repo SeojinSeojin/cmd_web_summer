@@ -1,11 +1,6 @@
 import express from "express";
-import {
-    postAddUser,
-    postLogin,
-    logout,
-    isAuthenticated,
-    isNotAuthenticated,
-} from "../controllers/user_controller";
+import { postAddUser, postLogin, logout } from "../controllers/user_controller";
+import { isAuthenticated, isNotAuthenticated } from "../middleware";
 
 const user_router = express.Router();
 

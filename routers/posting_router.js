@@ -1,5 +1,5 @@
 import express from "express";
-import { isAuthenticated } from "../controllers/user_controller";
+import { isAuthenticated } from "../middleware";
 import PostingModel from "../db/posting";
 import UserModel from "../db/user";
 

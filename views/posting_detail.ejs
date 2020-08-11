@@ -7,23 +7,7 @@
 
 <body>
     <header>
-        <div>
-            <img src="/images/et_logo.jpg" style="width: 60px; height: auto; float: left;" onclick="location.href='/main/'" />
-            <div>
-                <p style="font-size: 0.9em; color: rgb(187, 27, 27);">에브리타임</p>
-                <p style="font-size: 1.2em;">성균관대</p>
-                <p></p>
-            </div>
-        </div>
-        <ul>
-            <li>게시판</li>
-            <li>시간표</li>
-            <li>강의평가</li>
-            <li>학점계산기</li>
-            <li>친구</li>
-            <li onclick="location.href='https://bookstore.everytime.kr/'">책방</li>
-            <li onclick="location.href='https://www.campuspick.com/'">캠퍼스픽</li>
-        </ul>
+        <%- include ("./partials/header") %>
     </header>
 
     <main>

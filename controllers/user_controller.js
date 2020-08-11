@@ -39,17 +39,3 @@ export const logout = (req, res) => {
     req.logout();
     res.redirect("/");
 };
-
-export const isAuthenticated = (req, res, next) => {
-    if (req.user) {
-        return next();
-    }
-    res.redirect("/");
-};
-
-export const isNotAuthenticated = (req, res, next) => {
-    if (req.user) {
-        res.redirect("/");
-    }
-    next();
-};
