@@ -21,13 +21,13 @@
                     <span>아이디</span>
                     <span>1106ksj</span>
                     <span>이름</span>
-                    <span>김서진</span>
+                    <span><%=req.user.name%></span>
                     <span>닉네임</span>
-                    <span>컴교서진</span>
+                    <span><%=req.user.name%></span>
                     <span>이메일</span>
-                    <span>1106laura@naver.com</span>
+                    <span><%=req.user.email%></span>
                     <span>학교</span>
-                    <span>성균관대학교</span>
+                    <span><%=req.user.school%></span>
                 </div>
             </div>
     </main>

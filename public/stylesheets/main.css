@@ -319,11 +319,6 @@ form input[type="submit"] {
     padding-top: 0.5em;
 }
 
-.info__nav ul li:nth-child(1) {
-    background-color: rgb(245, 245, 245);
-    color: rgb(187, 27, 27);
-}
-
 .info__nav ul li:hover {
     background-color: rgb(245, 245, 245);
     color: rgb(187, 27, 27);

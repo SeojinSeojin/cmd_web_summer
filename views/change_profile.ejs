@@ -13,18 +13,18 @@
         <%- include ("./partials/user_info_nav") %>
             <div class="info__change info__second">
                 <h2>개인정보 변경</h2>
-                <form>
+                <form action="/user/profile/change" method="post">
                     <div>
                         <span>닉네임</span>
-                        <input type="text" placeholder="컴교서진" />
+                        <input name="name" type="text" placeholder="<%=req.user.name%>" />
                     </div>
                     <div>
                         <span>이메일</span>
-                        <input type="email" placeholder="1106laura@naver.com" />
+                        <input name="email" type="email" placeholder="<%=req.user.email%>" disabled />
                     </div>
                     <div>
                         <span>현재 비밀번호</span>
-                        <input type="password" />
+                        <input name="password" type="password" />
                     </div>
                     <div>
                         <span>광고성 정보 수신 동의</span> <input type="checkbox" />

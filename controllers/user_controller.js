@@ -39,3 +39,35 @@ export const logout = (req, res) => {
     req.logout();
     res.redirect("/");
 };
+
+export const postChangeProfile = (req, res) => {
+    UserModel.findById(req.user._id, (err, user) => {
+        if (!user) {
+            console.log("no user");
+            return logout(req, res);
+        }
+        console.log(user);
+        const name = req.sanitize(req.body.name);
+        const password = req.sanitize(req.body.password);
+        /*
+            user.checkPassword(password, function(err, isMatch) {
+                if (err) {
+                    console.log(err);
+                    res.redirect("/");
+                }
+                if (isMatch) {*/
+        user.name = name;
+        user.save(function(err) {
+            if (err) {
+                console.log(err);
+                res.redirect("/");
+            }
+            res.redirect("/user/profile/");
+        });
+        /*
+                   } else {
+                       res.redirect("/user/profile/change");
+                   }
+               });*/
+    });
+};
