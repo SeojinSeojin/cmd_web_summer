@@ -3,9 +3,12 @@ import { isAuthenticated } from "../middleware";
 import {
     postCreatePosting,
     getPostingDetail,
+    getPostingList,
 } from "../controllers/posting_controller";
 
 const posting_router = express.Router();
+
+posting_router.get("/", isAuthenticated, getPostingList);
 
 posting_router.get("/create/", isAuthenticated, (req, res) =>
     res.render("posting_upload.ejs")

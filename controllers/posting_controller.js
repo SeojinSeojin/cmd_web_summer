@@ -27,20 +27,32 @@ export const getPostingDetail = (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(postingmodel);
             UserModel.findOne({
                 _id: postingmodel.creator,
             }).exec(function(err, post_creator) {
                 if (err) {
                     console.log(err);
                 } else {
-                    const post_creator_name = post_creator.name;
-                    res.render("posting_detail.ejs", {
-                        post: postingmodel,
-                        creator: post_creator_name,
-                    });
+                    if (!post_creator) {
+                        res.render("posting_detail.ejs", {
+                            post: postingmodel,
+                            creator: "알수없음",
+                        });
+                    } else {
+                        const post_creator_name = post_creator.name;
+                        res.render("posting_detail.ejs", {
+                            post: postingmodel,
+                            creator: post_creator_name,
+                        });
+                    }
                 }
             });
         }
+    });
+};
+
+export const getPostingList = (req, res) => {
+    PostingModel.find({}, (err, postings) => {
+        res.render("postings.ejs", { postings: postings });
     });
 };

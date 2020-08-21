@@ -1,0 +1,27 @@
+<html>
+<meta charset="utf-8" />
+<title>에부리타임</title>
+<link rel="stylesheet" href="/stylesheets/main.css" />
+<link rel="stylesheet" href="/stylesheets/header.css" />
+
+<body>
+    <header>
+        <%- include ("./partials/header") %>
+    </header>
+    <main style="padding-top: 100px;">
+        <div class="posting__board posting__detail">인사캠 자유게시판</div>
+        <div class="posting__detail">
+            <a href="/posting/create">새 글을 작성해주세요!</a>
+        </div>
+        <% for (i in postings){ %>
+            <div class="posting__list" onclick="location.href='/posting/detail/<%= postings[i]._id %>'">
+                <div><b><%= postings[i].title %> </b></div>
+                <span><%= postings[i].content %></span>
+                <span style="float: right;">익명</span>
+            </div>
+            <% } %>
+    </main>
+    <script src="/scripts/get_board_list.js"></script>
+</body>
+
+</html>

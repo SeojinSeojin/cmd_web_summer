@@ -45,6 +45,10 @@ a:hover {
     cursor: pointer;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -430,6 +434,18 @@ form input[type="submit"] {
     padding: 1em;
     margin-bottom: 0.1em;
     background-color: white;
+}
+
+.posting__list {
+    border: 1px solid rgb(200, 200, 200);
+    margin: 0 20% 0 20%;
+    padding: 1.2em;
+    margin-bottom: 0.2em;
+    background-color: white;
+}
+
+.posting__list:hover {
+    cursor: pointer;
 }
 
 .posting__board {
